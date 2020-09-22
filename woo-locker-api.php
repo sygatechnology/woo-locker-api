@@ -3,8 +3,8 @@
  * @package WooLockerPickupApi
  */
 /*
-Plugin Name: Woo Locker Pickup API
-Plugin URI: https://github.com/sygatechnology/woo-locker-api-api
+Plugin Name: WooLocker Pickup API
+Plugin URI: https://github.com/sygatechnology/woo-locker-api
 Description: Un système de livraison personnalisé pour WooCommerce lié à des APIs de gestion des casiers
 Version: 1.0.0
 Author: SYGA
