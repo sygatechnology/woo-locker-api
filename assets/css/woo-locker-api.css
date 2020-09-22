@@ -1,0 +1,62 @@
+#woo-schedule-checker-fieldset {
+	border: none;
+    margin-top: 1rem;
+}
+
+#woo-locker-schedule-checker-container label {
+	position: relative;
+    top: -9px;
+    cursor: pointer;
+}
+
+#woo-locker-schedule-checker-container input[type=radio], #woo-locker-schedule-checker-container input.radio {
+	float: left;
+    clear: none;
+    margin: 2px 13px 0 2px;
+}
+
+.fc-daygrid-event {
+    position: relative;
+    white-space: nowrap;
+    border-radius: 3px;
+    font-size: 0.65em !important;
+    font-size: var(--fc-small-font-size, 0.65em) !important;
+}
+
+#woo-locker-labels .woo-locker-label {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.woo-locker-icon-container {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+.woo-locker-selected {
+    background-color: #f9f9f9 !important;
+    cursor: default !important;
+}
+
+.woo-locker-hidden {
+    display: none !important;
+}
+
+.woo-booked-label {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #d41414;
+    font-weight: 300;
+}
+
+.woo-locker-spinner {
+    text-align: center;
+}
+
+.woo-locker-spinner img {
+    height: 4rem;
+}
