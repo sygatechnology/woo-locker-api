@@ -30,7 +30,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 	define( 'WOO_LOCKER_API__MINIMUM_WP_VERSION', '4.0' );
 	define( 'SHIPPING_METHOD_ID', 'woo_locker_pickup');
 	define( 'WOO_LOCKER_API__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-	define( 'WOO_LOCKER_API__PLUGIN_URL', plugins_url( '/', __FILE__ ) );
+	define( 'WOO_LOCKER_API__PLUGIN_URL', untrailingslashit(plugins_url( '/', __FILE__ ) ));
 	define( 'WOO_LOCKER_API__PLUGIN_PATH', plugin_basename( __FILE__ ) );
 	define( 'WOO_LOCKER_API_INTERFACES_DIR', WOO_LOCKER_API__PLUGIN_DIR . 'interfaces/' );
 	define( 'WOO_LOCKER_API_CLASSES_DIR', WOO_LOCKER_API__PLUGIN_DIR . 'includes/' );

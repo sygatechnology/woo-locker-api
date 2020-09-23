@@ -44,8 +44,7 @@
                             jQuery("#woo_locker_delivery_locker_info_content-spinner").removeClass('woo-locker-hidden');
                         },
                         success: function(response){
-                            //jQuery('body').trigger('update_checkout');
-                            //jQuery("#woo_locker_delivery_locker_id").val(response['locker']['woo_locker_choosen_locker_id']);
+                            jQuery("#woo_locker_delivery_locker_id").val(response['locker']['woo_locker_choosen_locker_id']);
                             jQuery("#woo_locker_delivery_locker_name").text(response['locker']['woo_locker_choosen_locker_name']);
                             jQuery("#woo_locker_delivery_locker_address").text(response['locker']['woo_locker_choosen_locker_address']);
                             jQuery("#place_order").css("pointer-events", "").removeAttr('disabled');
@@ -117,6 +116,7 @@
                                 scrollTop: jQuery("#woo-schedule-checker-fieldset").offset().top - 200
                             }, 200);
                             jQuery("#woo_locker_delivery_calendar").css("pointer-events", "none").css("opacity", "0.5");
+                            jQuery("input[name='schedule_woo_locker']").attr("checked", false);
                             jQuery("#woo-locker-schedule-checker-container").addClass("woo-locker-hidden");
                             jQuery("#woo-locker-spinner").removeClass("woo-locker-hidden");
                         },
